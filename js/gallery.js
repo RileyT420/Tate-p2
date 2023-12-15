@@ -91,11 +91,11 @@ function GalleryImage() {
 }
 
 function fetchJSON(){
-	XMLHttpRequest.onreadystatechange = mRequest(){
+	mRequest.onreadystatechange = function() {
 		if(this.readyState == 4 && this.status == 200){
-			var mRequest = JSON.parse(xhttp.requestText);
+			var myArr = JSON.parse(mRequest.requestText);
 		};
 	};
-	xhttp.open();
-	xhttp.send();
+	mRequest.open();
+	mRequest.send();
 };
