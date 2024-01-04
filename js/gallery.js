@@ -16,7 +16,7 @@
 animate();
 
 var mLastFrameTime = 0;
-var mWaitTime = 1000; //time in ms
+var mWaitTime = 5000; //time in ms
 function animate() {
     requestAnimFrame( animate );
 	var currentTime = new Date().getTime();
@@ -125,3 +125,8 @@ function fetchJSON(){
 	mRequest.open("GET", mUrl, true);
 	mRequest.send();
 };
+
+function click(){
+	$("#indicator").addClass("rot270");
+	$("#indicator").removeClass("rot90");
+}
