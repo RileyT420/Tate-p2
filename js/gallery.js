@@ -40,7 +40,6 @@ function swapPhoto() {
 	document.getElementsByClassName('date')[0].innerHTML = "date" + mImages[mCurrentIndex].date;
 	//with a new image from your images array which is loaded 
 	//from the JSON string
-	console.log('swap photo');
 	mCurrentIndex++;
 	
 	if(
@@ -48,6 +47,24 @@ function swapPhoto() {
 	) {
 		mCurrentIndex = 0;
 	}
+	return;
+};
+
+function backPhoto() {
+	document.getElementById('photo').src = mImages[mCurrentIndex].url;
+	document.getElementsByClassName('location')[0].innerHTML = "location" + mImages[mCurrentIndex].location;
+	document.getElementsByClassName('description')[0].innerHTML = "description" + mImages[mCurrentIndex].description;
+	document.getElementsByClassName('date')[0].innerHTML = "date" + mImages[mCurrentIndex].date;
+	//with a new image from your images array which is loaded 
+	//from the JSON string
+	mCurrentIndex--;
+	
+	if(
+		mCurrentIndex < 0
+	) {
+		mCurrentIndex = 12;
+	}
+	return;
 };
 
 // Counter for the mImages array

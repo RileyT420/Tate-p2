@@ -13,12 +13,12 @@
     <p class="banner">IS219 Slide Show</p>
     <div id="slideShow">
       <div class="photoHolder">
-        <img class="thumbnail" id="photo" src="http://placehold.it/518x389?text=Welcome+to+my+Gallery" alt="Gallery Image"/>
-       <button onclick="click()" class="btn" ></div> <img id="indicator" class="moreIndicator rot90" src="img/more.png" alt="More Content"/></button>
+        <img class="thumbnail" id="photo" src="http://placehold.it/518x389?text=Welcome+to+my+Gallery" alt="Gallery Image">
+        <img onclick="click()" id="indicator" class="moreIndicator rot90" src="img/more.png" alt="More Content"/>
       </div>
       <div id="nav">
-        <img id="prevPhoto" class="rot180" src="img/arrow.png" alt="Previous Photo"/>
-        <button class="btn" onclick="swapPhoto()"><img id="nextPhoto"  src="img/arrow.png" alt="Next Photo"/></button> 
+        <img onclick="backPhoto()" id="prevPhoto" class="rot180" src="img/arrow.png" alt="Previous Photo"/>
+        <img onclick="swapPhoto()" id="nextPhoto"  src="img/arrow.png" alt="Next Photo"/>
       </div>
       <div class="details">
         <p class="location">Location: </p>
