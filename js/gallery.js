@@ -47,7 +47,6 @@ function swapPhoto() {
 	) {
 		mCurrentIndex = 0;
 	}
-	return;
 };
 
 function backPhoto() {
@@ -64,7 +63,6 @@ function backPhoto() {
 	) {
 		mCurrentIndex = 12;
 	}
-	return;
 };
 
 // Counter for the mImages array
@@ -143,7 +141,16 @@ function fetchJSON(){
 	mRequest.send();
 };
 
-function click(){
-	$("#indicator").addClass("rot270");
-	$("#indicator").removeClass("rot90");
-}
+$(document).ready(function(){
+	$(".moreIndicator").click(function(){
+		if ($(".moreIndicator").hasClass("rot90")){
+			$(".moreIndicator").removeClass("rot90")
+			$(".moreIndicator").addClass("rot270")
+			$("div.details").fadeToggle("fast", "linear")
+		} else {
+			$(".moreIndicator").removeClass("rot270")
+			$(".moreIndicator").addClass("rot90")
+			$("div.details").fadeToggle("fast", "linear")
+		}
+	  }
+	)});
