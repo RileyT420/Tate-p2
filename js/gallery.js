@@ -40,6 +40,7 @@ function swapPhoto() {
 	document.getElementsByClassName('date')[0].innerHTML = "date" + mImages[mCurrentIndex].date;
 	//with a new image from your images array which is loaded 
 	//from the JSON string
+	mLastFrameTime = 0;
 	mCurrentIndex++;
 	
 	if(
@@ -56,6 +57,7 @@ function backPhoto() {
 	document.getElementsByClassName('date')[0].innerHTML = "date" + mImages[mCurrentIndex].date;
 	//with a new image from your images array which is loaded 
 	//from the JSON string
+	mLastFrameTime = 0;
 	mCurrentIndex--;
 	
 	if(
