@@ -96,7 +96,12 @@ function makeGalleryImageOnloadCallback(galleryImage) {
 }
 
 $(document).ready( function() {
-	
+	const queryString = window.location.search;
+	console.log(queryString)
+	const urlParams = new URLSearchParams(queryString);
+	const images = urlParams.get('images')
+	console.log(images);
+
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
 	
