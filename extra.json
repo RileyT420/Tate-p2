@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imgPath": "img/places/download.jfif",
+            "imgLocation": "USA",
+            "description": "image of clouds",
+            "date": "01/01/2001"
+        },
+        {
+            "imgPath": "img/places/download (1).jfif",
+            "imgLocation": "colorado",
+            "description": "snowy mountain",
+            "date": "04/02/1916"
+        },
+        {
+            "imgPath": "img/places/download (2).jfif",
+            "imgLocation": "the flash movie",
+            "description": "red lightning from the flash",
+            "date": "03/11/2011"
+        },     
+        {
+            "imgPath": "img/places/download (3).jfif",
+            "imgLocation": "mount everest",
+            "description": "The largest mountain in the world",
+            "date": "03/21/2012"
+        },
+    {
+      "imgPath": "img/places/download (4).jfif",
+      "imgLocation": "russia",
+      "description": "Light art in russia",
+      "date": "05/15/2016"
+    }
+  ]
+}

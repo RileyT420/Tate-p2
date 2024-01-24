@@ -99,12 +99,12 @@ $(document).ready( function() {
 	const queryString = window.location.search;
 	console.log(queryString)
 	const urlParams = new URLSearchParams(queryString);
-	const images = urlParams.get('images')
-	console.log(images);
+	const location = urlParams.get('location')
+	console.log(location);
 
 	// This initially hides the photos' metadata information
 	//$('.details').eq(0).hide();
-	
+
 });
 
 window.addEventListener('load', function() {
@@ -124,6 +124,17 @@ function GalleryImage() {
 	let url;
 }
 
+function getUrlParams(){
+	var queryString = window.location.search;
+	if (queryString) {
+		queryString = queryString.slice(6);
+		console.log(queryString)
+		mUrl = queryString
+	} else {
+		mUrl = 'images.json';
+	}
+}
+getUrlParams()
 function iterateJSON()
 {
 	for(let i = 0; i < mJson.images.length; i++) 
